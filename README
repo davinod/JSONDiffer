@@ -4,7 +4,7 @@ this app receives two JSON files base64 encoded in two different endpoints and a
 
 author: davi diogo
 email : davinod@gmail.com
-github: https://github.com/davinod
+github: https://github.com/davinod/jsondiffer
 date  : 28/jan/2016
 
 -----------------------------
@@ -30,4 +30,7 @@ Open Items (Issues/Enhancements):
 - May need to discuss the requirements regarding having sessions to allow multiple users to use the app simultaneously
   the way it is designed, in a shared environment where multiple users will access the app, the json left and right
   may be replaced by other users - Proposed
+- Create dev/qa/prod environments in amazon to deploy jsondiffer - Proposed
+- Create automate builds of jsondiffer on amazon - Proposed
+- Create automate deployments of jsondiffer on amazon - Proposed
 
