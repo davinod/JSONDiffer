@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web JSONDiffer v1</title>
+</head>
+<body>
+    <h1>Welcome to JSONDiffer by Davi Diogo</h1>
+    <p>This tools is used diff 2 JSON files</p>
+    <h2>How to use:</h2>
+    <li>Submit your base64 encoded JSONs using the links below:</li><br>
+    <a href="http://localhost:5000/v1/diff/setleft">Left JSON</a> (
+    {% if state == "22" or state == "21" or state == "20" %}
+        Empty
+    {% elif state == "12" or state == "11" or state == "10" %}
+        Invalid
+    {%  elif state == "02" or state == "01" or state == "00" %}
+        Valid
+    {% endif %}
+    )
+    <br>
+    <a href="http://localhost:5000/v1/diff/setright">Right JSON</a> (
+    {% if state == "22" or state == "12" or state == "02" %}
+        Empty
+    {% elif state == "21" or state == "11" or state == "01" %}
+        Invalid
+    {%  elif state == "20" or state == "10" or state == "00" %}
+        Valid
+    {% endif %}
+    )
+    <br><br>
+    <form name="submitcomparison" action="http://localhost:5000/v1/diff" method="GET">
+        <input type="submit" name="submit" id="submit" value="Compare"/>
+    </form>
+
+    <p>State = {{state}}</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web JSONDiffer v1 - Left JSON submission</title>
+</head>
+<body>
+    <h1>JSONDiffer by Davi Diogo</h1>
+    <h3>Inform the JSON file base64 encoded</h3>
+    <p>Use this External Web App to <a href="https://www.base64encode.org/">encode</a> and <a href="https://www.base64decode.org/">decode</a> if needed</p>
+
+    <script>
+        function process()
+        {
+            var url="http://localhost:5000/v1/diff/left/" + document.getElementById("leftjson").value;
+            location.href=url;
+            return false;
+        }
+
+    </script>
+    <form onsubmit="return process();">
+        Left<br>
+        <textarea name="leftjson" id="leftjson" cols="50" rows="30">{{ left }}</textarea><br>
+        <input type="submit" name="submit" id="submit" value="Save"/>
+    </form>
+</body>
+</html>
