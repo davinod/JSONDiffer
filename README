@@ -11,16 +11,16 @@ date  : 28/jan/2016
 
 How to use:
 
-1) mkdir ~/jsondiffer
-2) cd ~/jsondiffer
-3) git clone https://github.com/davinod/jsondiffer
-4) source ~/jsondiffer/venv/bin/activate
-5) pip install flask
-6) chmod a+x ~/jsondiffer/jsondiffer/*.py
+1) git clone https://github.com/davinod/jsondiffer
+2) chmod a+x ~/jsondiffer/jsondiffer/*.py
+3) source ~/jsondiffer/venv/bin/activate
+4) pip install flask
 7) python ~/jsondiffer/jsondiffer/app.py 
 8) Access the application via http://localhost:5000/v1/index
-   Note: If you face errors, ensure the port number 5000 is available
-9) $ ./test_jsondiffer.py runs the unittest project
+9) python ~/jsondiffer/jsondiffer/test_jsondiffer.py runs the unittest project
+
+
+   Note: If you face errors, ensure the port number 5000 is availablee
 
 ------------------------------
 
